@@ -87,3 +87,5 @@ src/
 - `@accessibility`: Tests de accesibilidad
 - `@visual`: Tests de regresión visual
 - `@api`: Tests de API
+
+<!-- lastupdate: 2026-08-18 21:18 -->
