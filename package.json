@@ -1,0 +1,22 @@
+{
+  "name": "playwright-ecommerce",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "test:accessibility": "playwright test --grep @accessibility",
+    "test:visual": "playwright test --grep @visual",
+    "test:api": "playwright test --grep @api",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.0.0"
+  }
+}
