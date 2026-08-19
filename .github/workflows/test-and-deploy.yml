@@ -13,6 +13,9 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -48,7 +51,6 @@ jobs:
         with:
           name: playwright-report
           path: public
-          if-no-files-found: ignore
       - name: Fallback if no report
         if: always()
         run: |
